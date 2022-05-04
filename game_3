@@ -19,4 +19,7 @@ while True:
     else:
         print('You are right! The number is {}. You guessed it in {} attempts!'.format(number, count))
         break # the end of the game!
-    
+    """
+    now we create a change in the file and save it  - to later push it to 
+    github repository
+    """
