@@ -1,0 +1,22 @@
+"""The guessing game for a number between 1 and 100. \n \
+    Computer chooses the number and user tries to guess it!
+"""
+import numpy as np
+number = np.random.randint(1,101) # creating a random number in range from 1 to 100 
+count = 0
+
+while True: 
+    count += 1
+    predict_number = int(input('Computer had chosen a number between 1 and 100. \n \
+        Guess what is that number? '))
+    
+    if predict_number > number:
+        print('The number is smaller')
+    
+    elif predict_number < number:
+        print('The number is bigger')
+        
+    else:
+        print('You are right! The number is {}. You guessed it in {} attempts!'.format(number, count))
+        break # the end of the game!
+    
